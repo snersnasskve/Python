@@ -3,7 +3,7 @@ import time
 
 GPIO.setmode(GPIO.BOARD)
 
-outpin = 7
+outputpin = 7
 
 GPIO.setup(outputpin, GPIO.OUT)
 
