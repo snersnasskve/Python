@@ -18,3 +18,4 @@ while True:
 		flipflop = True
 		GPIO.output(outputpin, GPIO.LOW)
 		print("light off")
+        time.sleep(1)
