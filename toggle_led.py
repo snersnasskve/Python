@@ -5,7 +5,7 @@ GPIO.setmode(GPIO.BOARD)
 
 outpin = 7
 
-GPIO.setup(output, GPIO.OUT)
+GPIO.setup(outputpin, GPIO.OUT)
 
 flipflop = True
 
