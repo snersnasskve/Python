@@ -12,7 +12,7 @@ flipflop = True
 while True:
 	if flipflop:
 		flipflop = False
-		GPIO.output(outputpin, GPIO.HIGH
+		GPIO.output(outputpin, GPIO.HIGH)
 		print("light on")
 	else:
 		flipflop = True
