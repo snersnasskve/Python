@@ -13,14 +13,20 @@ mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)	## Loopback address =
 
 ##	127.0.0.1 = loopback address port 1234
 ##	 socket.getaddrinfo(host, port[, family[, socktype[, proto[, flags]]]])
-ainfo = socket.getaddrinfo("127.0.0.1", 1234)
+ainfo = socket.getaddrinfo(None, 1234)
 print(ainfo)
 ## This shows a list of three fivetuples of which the fifth (of the 5) is the ip & port
-print(ainfo[0][4])
+print(ainfo[-1][4])
 ##		You're looking for a tuple of two - ip and port
 ##	This is the address we want to connect to
-mysock.connect(ainfo[0][4])
-##	Need to send data, not strings
-mysock.sendall(b"Hello raspo")
-##	Do'nt forget to close
+mysock.bind(ainfo[-1][4])
+mysock.listen(5)	## max 5 concurrent connections
+conn, addr = mysock.accept()
+
+## In the second window, call 
+##		nc 127.0.0.1 1234
+##		Hello raspo##	Do'nt forget to close
+
+print(data)
+conn.close()
 mysock.close()
