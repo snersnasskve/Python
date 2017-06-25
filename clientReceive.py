@@ -1,5 +1,5 @@
 ##	Use putty to open two separate windows on pi
-
+#####afterthought - is this really client???
 ## on the server side use 
 ##		nc -l 1234   ## netcap listen on port 1234
 

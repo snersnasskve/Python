@@ -1,6 +1,6 @@
 import socket
 import sys
-
+###ok so looks like this makes no sense
 mysock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 ##	Arbitrary port
 try:
