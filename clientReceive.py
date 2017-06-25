@@ -4,7 +4,7 @@
 ##		nc -l 1234   ## netcap listen on port 1234
 
 ##	This is the client side
-##	createbindcocket.py
+##	createbindsocket.py
 import socket
 
 ## AF_INET = communicate on internet - always use this
