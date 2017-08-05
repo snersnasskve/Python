@@ -6,7 +6,6 @@
 
 
 from twython import Twython
-from requests_oauthlib import requests_oauthlib
 twitter = Twython()
 
 C_KEY = "1XYEbHDiBoD5iHiw2LK70ZE5U"
