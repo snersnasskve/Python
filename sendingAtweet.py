@@ -15,4 +15,4 @@ A_SECRET = "0twTxMWtoK6DF6d4TC4tdOrRPnArTjM4IcOHrkbeoHgX0"
 
 api = Twython(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
-api.update_status("Python is cool - if this tweet arrives, that is!")
+api.update_status(status="Python is cool - if this tweet arrives, that is!")
