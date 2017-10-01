@@ -13,7 +13,7 @@ class MyStreamer(TwythonStreamer):
     def on_success(self, data):
         if 'text' in data:
             print("Found it!")
-            print('text' in data)
+            print_recur(data)
 
 
     def on_error(self, status_code, data):
@@ -23,3 +23,13 @@ class MyStreamer(TwythonStreamer):
 stream = MyStreamer(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
 stream.statuses.filter(track="Harris")
+
+def print_recur(py_item):
+    for key, value in py_item.items():
+        print key
+        if type(value) == dict:
+            print_recur(value)
+        else:
+            print value
+
+print_recur(global_dict)
