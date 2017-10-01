@@ -1,3 +1,6 @@
+from twython import Twython
+from twython import TwythonStreamer
+twitter = Twython()
 
 
 #   Define a new class which extends TwythonStreamer
@@ -7,8 +10,6 @@ class MyStreamer(TwythonStreamer):
         if 'text' in data:
             print("Found it!")
 
-from twython import Twython
-twitter = Twython()
 
 stream = MyStreamer(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
