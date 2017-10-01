@@ -19,17 +19,17 @@ class MyStreamer(TwythonStreamer):
     def on_error(self, status_code, data):
         print status_code
         self.disconnect()
+
+    def print_recur(py_item):
+        for key, value in py_item.items():
+            print key
+            if type(value) == dict:
+                print_recur(value)
+            else:
+                print value
         
 stream = MyStreamer(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
 stream.statuses.filter(track="Harris")
 
-def print_recur(py_item):
-    for key, value in py_item.items():
-        print key
-        if type(value) == dict:
-            print_recur(value)
-        else:
-            print value
 
-print_recur(global_dict)
