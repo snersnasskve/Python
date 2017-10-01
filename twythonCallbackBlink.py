@@ -2,6 +2,11 @@ from twython import Twython
 from twython import TwythonStreamer
 twitter = Twython()
 
+import RPi.GPIO as GPIO
+import time
+GPIO.setmode(GPIO.BOARD)
+GPIO.setup(13, GPIO.OUT)
+
 C_KEY = "1XYEbHDiBoD5iHiw2LK70ZE5U"
 C_SECRET = "6mCfasKF4iNNrY4j60nm9Enlq7Ggb4AVs9xPloJT8xrEVUTgDy"
 A_TOKEN = "88620543-fPtczMK8OUVVek684JaNVR6SMsjDGbvvBS7VIymBO"
@@ -12,10 +17,7 @@ class MyStreamer(TwythonStreamer):
     #Callback called on_success()
     def on_success(self, data):
         if 'text' in data:
-            print("Found it!")
-            #print(data['text'])
-            # Below is very useful
-            #print_recur(data)
+            blink()
 
 
     def on_error(self, status_code, data):
@@ -23,16 +25,14 @@ class MyStreamer(TwythonStreamer):
         self.disconnect()
         # Error 420 is you've reached your limit. Super sux. Did hardly any
 
-def print_recur(py_item):
-    for key, value in py_item.items():
-        print key
-        if type(value) == dict:
-            print_recur(value)
-        else:
-            print value
+def blink():
+    GPIO.output(13, GPIO.HIGH)
+    time.sleep(1)
+    GPIO.output(13, GPIO.LOW)
+
         
 stream = MyStreamer(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
-stream.statuses.filter(track="sner")
+stream.statuses.filter(track="sners")
 
 
