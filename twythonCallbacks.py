@@ -13,8 +13,13 @@ class MyStreamer(TwythonStreamer):
     def on_success(self, data):
         if 'text' in data:
             print("Found it!")
+            print('text' in data)
 
 
+    def on_error(self, status_code, data):
+        print status_code
+        self.disconnect()
+        
 stream = MyStreamer(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
 stream.statuses.filter(track="Harris")
