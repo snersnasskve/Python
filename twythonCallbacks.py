@@ -30,6 +30,6 @@ def print_recur(py_item):
         
 stream = MyStreamer(C_KEY, C_SECRET, A_TOKEN, A_SECRET)
 
-stream.statuses.filter(track="Harris")
+stream.statuses.filter(track="sner")
 
 
