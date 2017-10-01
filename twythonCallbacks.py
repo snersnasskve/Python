@@ -13,7 +13,7 @@ class MyStreamer(TwythonStreamer):
     def on_success(self, data):
         if 'text' in data:
             print("Found it!")
-            print(data ['text'])
+            print(data['text'])
             # Below is very useful
             #print_recur(data)
 
