@@ -21,7 +21,7 @@ class MyStreamer(TwythonStreamer):
 
 
     def on_error(self, status_code, data):
-        print status_code
+        print (status_code)
         self.disconnect()
         # Error 420 is you've reached your limit. Super sux. Did hardly any
 
