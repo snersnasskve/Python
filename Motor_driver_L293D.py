@@ -17,18 +17,18 @@ for i in range(3):
     GPIO.output(MotorBackward,GPIO.LOW)
     GPIO.output(MotorEnable,GPIO.HIGH)
 
-    time.sleep(1)
+    time.sleep(5)
 
     print ("Turning Backwards")
     GPIO.output(MotorForward,GPIO.LOW)
     GPIO.output(MotorBackward,GPIO.HIGH)
     GPIO.output(MotorEnable,GPIO.HIGH)
 
-    time.sleep(1)
+    time.sleep(5)
 
     print ("Motor Stop")
     GPIO.output(MotorEnable,GPIO.LOW)
 
-    time.sleep(1)
+    time.sleep(5)
 
 GPIO.cleanup()
