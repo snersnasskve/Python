@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8f5967c9-c399-4d30-a674-dcc3e3baaf18" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/clientReceive.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/createbindsocket.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/createscocket.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/echoserver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/liveserver.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/search4hashtag.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/sendingAtweet.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/serverReceiveNoAction.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twythonCallbackBlink.py" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/twythonCallbacks.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Motor_driver_L293D.py" afterPath="$PROJECT_DIR$/Motor_driver_L293D.py" />
-    </list>
+    <list default="true" id="8f5967c9-c399-4d30-a674-dcc3e3baaf18" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,8 +55,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="1434" />
-    <option name="y" value="35" />
+    <option name="x" value="59" />
+    <option name="y" value="30" />
     <option name="width" value="779" />
     <option name="height" value="487" />
   </component>
@@ -126,7 +114,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="1434" y="35" width="779" height="487" extended-state="1" />
+    <frame x="59" y="30" width="779" height="487" extended-state="1" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
